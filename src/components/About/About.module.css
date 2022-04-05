@@ -1,0 +1,69 @@
+.summerySide,
+.infoSide {
+  width: 96%;
+  margin: 0 2%;
+}
+.summerySide p {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+  position: relative;
+}
+
+.summerySide p::before,
+.summerySide p::after {
+  font-size: 35px;
+  font-family: sans-serif;
+  color: #f2c12e;
+  position: absolute;
+}
+.summerySide p::before {
+  content: "\201C";
+  top: -15px;
+  left: -20px;
+}
+
+.summerySide p::after {
+  content: "\201D";
+  margin-top: -8px;
+  margin-left: 10px;
+}
+
+.infoSide {
+  display: flex;
+}
+
+.imgCover {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.imgBorder {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #f2c12e;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.imgBorder img {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.cvBtnCover {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.cvBtnCover > div {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,4 @@
+.rightSide {
+    width: calc(100% - 282px);
+    margin-left: 282px;
+}

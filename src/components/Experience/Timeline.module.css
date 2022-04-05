@@ -1,0 +1,38 @@
+
+.timelineContainer {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.timelineContainer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#cdTimeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#cdTimeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 2px;
+  background: #656567;
+}
+
+
+@media only screen and (min-width: 1170px) {
+  #cdTimeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  #cdTimeline::before {
+    left: 50%;
+    margin-left: -1px;
+  }  
+}

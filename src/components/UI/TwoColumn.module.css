@@ -1,0 +1,9 @@
+.gridcolumn{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridcolumn > div{
+  width: 46%;
+  margin: 0 2%;
+}

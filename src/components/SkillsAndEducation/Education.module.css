@@ -1,0 +1,33 @@
+.educationCard{
+  border-left: 3px solid #f2c12e;
+  border-radius: 5px;
+  width: 420px;
+  padding: 5px 10px;
+  margin: 20px 0;
+}
+
+.educationCard p{
+  margin: 4px 0;
+  text-align: end;
+}
+
+.institute{
+  color: #ccc;
+  text-align: left !important;
+  font-size: 15px;
+}
+
+.course{
+  color: #f2c12e;
+  font-size: 17px;
+}
+
+.department{
+  color: #ccc;
+  font-size: 15px;
+}
+
+.duration{
+  color: #ccc;
+  font-size: 15px;
+}

@@ -1,0 +1,38 @@
+.skillCover{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.skillName{
+  font-size: 15px;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1;
+  padding-right: 20px;
+  margin-top: -2px;
+  margin-bottom: 0;
+}
+
+.ratedbox{
+  width: fit-content; 
+  display: flex;
+  margin-left: auto;
+}
+
+.rate{
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.yellowRate{
+  background-color: #f2c12e;
+}
+
+.emptyRate{
+  background-color: rgb(66, 66, 66);
+}

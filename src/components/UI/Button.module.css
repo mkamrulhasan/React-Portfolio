@@ -1,0 +1,70 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 100;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn span{
+  color: #f2c12e;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.btn:hover{
+  color: #f2c12e;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn::before {
+  width: 40%;
+  height: 200%;
+  top: -50%;
+  left: -15%;
+  background: #0e0f10;
+  padding: 0px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.btn::after {
+  width: 110%;
+  height: 10%;
+  top: 105%;
+  left: -5%;
+  background: #f2c12e;
+  padding: 0px;
+  z-index: 0;
+}
+
+.btn:hover::before {
+  -webkit-border-radius: unset;
+  border-radius: unset;
+  height: 233%;
+  top: -59%;
+  -webkit-transform: translateX(120%) scaleX(3) scaleY(0.8);
+  transform: translateX(120%) scaleX(3) scaleY(0.8);
+}
+
+.btn:hover::after {
+  -webkit-transform: translateX(-55%) translateY(-550%) rotate(90deg)
+    scaleX(0.3);
+  transform: translateX(-55%) translateY(-550%) rotate(90deg) scaleX(0.3);
+}

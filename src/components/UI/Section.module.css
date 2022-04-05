@@ -1,0 +1,79 @@
+.section {
+  padding: 60px 15px;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url(../../images/dots.png);
+  background-size: contain;
+}
+
+.title {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+  margin-left: -15px;
+}
+
+.underline::before,
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1.5px;
+  left: calc(50% - 46px);
+  bottom: -21px;
+  background-color: #f2c12e;
+}
+
+.underline::before {
+  left: calc(50% + 16px);
+}
+
+.underline::before {
+  left: calc(50% + 29px);
+}
+
+.underline span {
+  position: absolute;
+  width: 35px;
+  height: 17px;
+  left: calc(50% - 17px);
+  margin-top: 10px;
+}
+
+.underline span::before,
+.underline span::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f2c12e;
+}
+
+.underline span::before {
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 50px 50px 0;
+  border-radius: 50px 50px 0 50px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.underline span::after {
+  left: 26px;
+  right: 0;
+  -webkit-border-radius: 50px 50px 50px 0;
+  border-radius: 50px 50px 50px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.wrapper{
+  margin-top: 60px;
+}

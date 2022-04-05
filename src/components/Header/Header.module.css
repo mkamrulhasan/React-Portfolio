@@ -1,0 +1,78 @@
+.header{
+ height: 100vh;
+ width: 100%;
+ background-image: url(../../images/background.jpg);
+ background-repeat: no-repeat;
+ background-position: 100%;
+ background-size: cover;
+ position: relative;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1;
+}
+
+.innerText{
+    position: absolute;
+    z-index: 2;
+    right: 40px;
+    bottom: 50px;
+    text-align: right;
+}
+
+.innerText h2{
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.innerText h1{
+    font-size: 90px;
+    font-weight: 300;
+    color: #F2C12E;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.innerText h1 span{
+    color: transparent;
+    -webkit-text-stroke: 0.04vw #F2C12E;
+    position: relative;
+}
+
+.innerText h1 span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12%;
+    height: 100%;
+    color: #F2C12E;
+    line-height: 1.2;
+    -webkit-text-stroke: 0vw #F2C12E;
+    border-right: 2px solid #F2C12E;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+    0%,10%, 100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
