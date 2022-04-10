@@ -1,8 +1,9 @@
+
 import Styles from './Experience.module.css';
 
-const Experience= props =>{
+const Experience = (props) => {
   return (
-    <div className={Styles.TimelineBlock}>
+    <div className={`${Styles.TimelineBlock} scrollAnimation`}>
       <div className={Styles.dots}></div>
 
       <div className={Styles.timelineContent}>
@@ -10,11 +11,11 @@ const Experience= props =>{
         <p>{props.summary}</p>
 
         <span className={Styles.date}>
-          {props.start} - {props.end}
+          {props.start} -- {props.end}
         </span>
       </div>
     </div>
-  ); 
+  );
 };
 
 export default Experience;

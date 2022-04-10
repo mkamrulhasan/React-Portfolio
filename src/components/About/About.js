@@ -2,12 +2,13 @@ import Styles from "./About.module.css";
 import Section from "../UI/Section";
 import TwoColumn from "../UI/TwoColumn";
 import Hemel from '../../images/hemel.jpg'
-import Button from "../UI/Button";
+import Btn from "../UI/Btn";
+import CV from "../../images/Hemel-cv.jpg";
 
 const About = () => {
   return (
-    <Section secTitle="Who am I.">
-      <TwoColumn>
+    <Section secTitle="Who am I." id='about'>
+      <TwoColumn className='aboutGrid'>
         <div className={Styles.summerySide}>
           <p>
             Hay, I am Kamrul Hasan Hemel . I am a freelance Web designer and
@@ -27,7 +28,7 @@ const About = () => {
           </div>
           <div className={Styles.cvBtnCover}>
             <div>
-              <Button>Download CV</Button>
+              <Btn icon='download' Link={CV}>Download CV</Btn>
             </div>
           </div>
         </div>

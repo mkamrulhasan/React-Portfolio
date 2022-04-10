@@ -1,9 +1,19 @@
-.gridcolumn{
+.gridcolumn {
   display: flex;
   flex-wrap: wrap;
 }
 
-.gridcolumn > div{
+.gridcolumn > div {
   width: 46%;
   margin: 0 2%;
+}
+
+@media (max-width: 768px) {
+  .gridcolumn > div {
+    width: 96%;
+  }
+
+  .aboutGrid{
+    flex-wrap: wrap-reverse;
+  }
 }

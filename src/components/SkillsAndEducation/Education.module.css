@@ -31,3 +31,17 @@
   color: #ccc;
   font-size: 15px;
 }
+
+@media (max-width: 1400px) {
+  .educationCard{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}

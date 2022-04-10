@@ -1,6 +1,6 @@
 
 .timelineContainer {
-  max-width: 1020px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .timelineContainer::after {
@@ -19,14 +19,14 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 10px;
   height: 100%;
   width: 2px;
   background: #656567;
 }
 
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 992px) {
   #cdTimeline {
     margin-top: 3em;
     margin-bottom: 3em;

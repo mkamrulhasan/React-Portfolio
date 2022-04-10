@@ -8,8 +8,6 @@ const SkillsContainer = (props) => {
       {props.skillsSet.skills.map((skill, index)=>{
         return <Skill name={skill.title} rate={skill.rate} key={index} />;
       })}
-      
-      <Skill name="Html" rate="5" />
     </div>
   );
 };

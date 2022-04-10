@@ -6,11 +6,18 @@ const Skill = (props) => {
       <p className={Styles.skillName}>{props.name}</p>
       <div className={Styles.ratedbox}>
         {[...Array(Number(props.rate))].map((arr, i) => {
-          return <div className={`${Styles.yellowRate} ${Styles.rate}`}></div>;
+          return (
+            <div
+              className={`${Styles.yellowRate} ${Styles.rate}`}
+              key={i}
+            ></div>
+          );
         })}
 
         {[...Array(5 - Number(props.rate))].map((arr, i) => {
-          return <div className={`${Styles.emptyRate} ${Styles.rate}`}></div>;
+          return (
+            <div className={`${Styles.emptyRate} ${Styles.rate}`} key={i}></div>
+          );
         })}
       </div>
     </div>

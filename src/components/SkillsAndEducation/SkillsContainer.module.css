@@ -4,3 +4,17 @@
   font-weight: 300;
   margin: 0;
 }
+
+@media (max-width: 1400px) {
+  .skillsWrapper {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}

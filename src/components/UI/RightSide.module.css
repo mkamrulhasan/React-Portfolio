@@ -1,4 +1,40 @@
 .rightSide {
-    width: calc(100% - 282px);
-    margin-left: 282px;
+  width: calc(100% - 282px);
+  margin-left: 282px;
+  background-image: url(../../images/dots.png);
+  background-size: contain;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 60px;
+  right: -10px;
+  font-size: 14px;
+  color: #fac935;
+  text-transform: uppercase;
+  font-weight: 400;
+  transform: rotate(-90deg);
+  transition: visibility 0.2s, opacity 0.5s linear;
+}
+
+.backToTop::after {
+  width: 20%;
+  height: 2px;
+  background-color: #fac935;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.3s;
+}
+
+.backToTop:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .rightSide {
+    width: 100%;
+    margin-left: 0;
+  }
 }

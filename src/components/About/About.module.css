@@ -67,3 +67,29 @@
   width: 100%;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .infoSide {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 578px) {
+  .summerySide p {
+  font-size: 13px;
+}
+
+.infoSide {
+  flex-wrap: wrap;
+}
+
+.imgCover {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.cvBtnCover {
+  width: 100%;
+  padding: 20px 0;
+  }
+}

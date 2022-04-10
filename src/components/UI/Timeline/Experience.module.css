@@ -16,10 +16,10 @@
 
 .dots {
   position: absolute;
-  top: calc(50% - 6px);
-  left: 0;
-  width: 10px;
-  height: 10px;
+  top: calc(50% - 3px);
+  left: 4px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: #f2c12e;
   box-shadow: 0 0 0 3px #656567, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -27,7 +27,7 @@
 
 .timelineContent {
   position: relative;
-  margin-left: 60px;
+  margin-left: 40px;
   background: #222529;
   border-radius: 2px;
   color: #ccc;
@@ -58,16 +58,21 @@
   border-right: 10px solid #222529;
 }
 
-@media only screen and (min-width: 768px) {
-  .timelineContent h2 {
-    
-  }
+.timelineContent h2 {
+   font-size: 22px;
+   font-weight: 500;
+   margin: 10px 0; 
+}
   .timelineContent p {
-    
+    font-size: 14px;
+    font-weight: 300;
   }
+
+@media only screen and (min-width: 768px) {
+  
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 992px) {
   #cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -139,9 +144,10 @@
     border-right-color: #222529;
   }
   
-  .cssanimations .timelineContent.isHidden {
+  .timelineContent.isHidden {
     visibility: hidden;
   }
+  
   .cssanimations .timelineContent.bounceIn {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;

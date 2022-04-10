@@ -1,0 +1,64 @@
+.contactInfo {
+    margin: 0 auto;
+    color: #ffffff;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.location,
+.email,
+.phone,
+.skype,
+.linkedin {
+    display: flex;
+}
+
+.location i,
+.email i,
+.phone i {
+    font-size: 26px;
+    color: #f2c12e;
+}
+
+.skype img,
+.linkedin img {
+    width: 26px;
+    height: 25px;
+}
+
+.contLevel {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1px 40px 20px 15px;
+    color: #f2c12e;
+}
+
+.contVal {
+    margin-left: auto;
+    margin-top: 0;
+    font-size: 17px;
+    color: #ccc;
+}
+
+@media (max-width: 578px) {
+  .contLevel {
+    font-size: 16px;
+    margin: 1px 20px 20px 15px;
+}
+.contVal {
+    font-size: 16px;
+}
+
+.skype img,
+.linkedin img {
+    width: 22px;
+    height: 21px;
+}
+
+.location i,
+.email i,
+.phone i {
+    font-size: 21px;
+    color: #f2c12e;
+}
+}

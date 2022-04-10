@@ -69,7 +69,19 @@
   transform: translateX(-55%) translateY(-550%) rotate(90deg) scaleX(0.3);
 }
 
-.formSendBtn {
+.portfolioBtn {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 40px);
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.portfolioBtn:hover:after {
+  width: 155%;
+}
+
+.formSendBtn{
   margin-left: 9%;
   margin-top: 20px;
 }
@@ -80,6 +92,6 @@
 
 @media (max-width: 768px) {
   .formSendBtn {
-    margin-left: 0%;
+    margin-left: 15px;
   }
 }

@@ -2,8 +2,6 @@
   padding: 60px 15px;
   width: 90%;
   margin: 0 auto;
-  background-image: url(../../images/dots.png);
-  background-size: contain;
 }
 
 .title {
@@ -74,6 +72,22 @@
   transform: rotate(45deg);
 }
 
-.wrapper{
+.wrapper {
   margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 578px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .section {
+    padding: 35px 15px;
+  }
 }

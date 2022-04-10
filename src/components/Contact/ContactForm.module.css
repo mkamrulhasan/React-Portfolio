@@ -1,0 +1,50 @@
+.formAlert{
+  color: #fff;
+    background-color: #ffd75e;
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 300;
+    display: none;
+}
+
+.input,
+.textarea {
+    width: 80%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #222529;
+    color: #ccc;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-bottom-color: #f2c12e;
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0 , 0.2);
+    margin: 10px auto !important;
+    display: block !important;
+
+}
+
+input:focus,
+textarea:focus {
+    border-bottom-color: #ff8e2b;
+    outline: none;
+    background-color: #222529;
+}
+
+@media (max-width: 768px) {
+  .input,
+.textarea {
+    width: calc(100% - 30px);
+
+}
+
+.formAlert{
+    width: calc(100% - 30px);
+}
+}
