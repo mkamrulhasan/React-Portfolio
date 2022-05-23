@@ -75,7 +75,7 @@ const Portfolio = (props) => {
       projectSummary:
         "In this project client want a static page. I designed this page using HTML5, CSS3, javascript and SVG animation.",
       clientName: "Shireen Shaikh",
-      projectDate: "Nov-209",
+      projectDate: "Nov-2019",
       projectCategory: "Front-end, Web Animation",
       projectLink: "#",
     },
