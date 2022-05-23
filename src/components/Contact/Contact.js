@@ -1,4 +1,3 @@
-import Styles from './Contact.module.css';
 import Section from '../UI/Section';
 import TwoColumn from '../UI/TwoColumn';
 import Address from './Address';

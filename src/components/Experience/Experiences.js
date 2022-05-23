@@ -37,7 +37,7 @@ const Experiences = () => {
       end: "Sep-2021",
       company: "DvrUnlimited",
       summary:
-        "A marketpalce base on USA. Where I worked as a freelance web developer. My primary job was to build modern and nice looking front-end that are responsive and very interactive.",
+        "A marketpalce base on USA. Where I worked as a remote web developer. My primary job was to build modern and nice looking front-end that are responsive and very interactive.",
     },
   ]);
 

@@ -3,7 +3,7 @@ import Section from "../UI/Section";
 import TwoColumn from "../UI/TwoColumn";
 import Hemel from '../../images/hemel.jpg'
 import Btn from "../UI/Btn";
-import CV from "../../images/Hemel-cv.jpg";
+import CV from "../../images/CV.pdf";
 
 const About = () => {
   return (
