@@ -1,25 +1,19 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useEffect } from "react";
+import useHttp from "../../hooks/use-http";
 import Section from "../UI/Section";
 import Timeline from "../UI/Timeline/Timeline";
 
 const Experiences = () => {
-  const [experiencesState, setExperiencesState] = useState([]);
-
-  const fetchExprencesHandler = useCallback(async () => {
-    const response = await fetch(
+  const fetchExperiences = useHttp();
+  useEffect(() => {
+    fetchExperiences.requestHttp(
       "https://mkhemel-portfolio-default-rtdb.asia-southeast1.firebasedatabase.app/experiences.json"
     );
-    const data = await response.json();
-    setExperiencesState(data);
-  }, []);
-
-  useEffect(() => {
-    fetchExprencesHandler();
-  }, [fetchExprencesHandler]);  
+  }, [fetchExperiences]);
 
   return (
-    <Section secTitle="What I have." id='experiences'>
-      <Timeline experiences={experiencesState} />
+    <Section secTitle="What I have." id="experiences">
+      <Timeline experiences={fetchExperiences.data} />
     </Section>
   );
 };
