@@ -7,13 +7,13 @@ import Education from "./Education";
 import SkillsContainer from "./SkillsContainer";
 
 const SkillsAndEducation = () => {
-   const fetchSkills = useHttp();
-   const fetchEducations = useHttp();
+    const { data: fetchSkillsData, requestHttp: fetchSkills } = useHttp();
+    const { data:fetchEducationsData, requestHttp: fetchEducations } = useHttp();
    useEffect(() => {
-     fetchEducations.requestHttp(
+     fetchEducations(
        "https://mkhemel-portfolio-default-rtdb.asia-southeast1.firebasedatabase.app/educations.json"
      );
-     fetchSkills.requestHttp(
+     fetchSkills(
        "https://mkhemel-portfolio-default-rtdb.asia-southeast1.firebasedatabase.app/skills.json"
      );
    }, [fetchSkills, fetchEducations]);
@@ -24,7 +24,7 @@ const SkillsAndEducation = () => {
         <div>
           <h3 className={Styles.subTitle}>My Education</h3>
           <div className={Styles.educationBlock}>
-            {fetchEducations.data.map((education, i)=>{
+            {fetchEducationsData.map((education, i)=>{
               return (
                 <Education
                   institute={education.institute}
@@ -41,7 +41,7 @@ const SkillsAndEducation = () => {
         </div>
         <div className={Styles.skillsBlock}>
           <h3 className={Styles.subTitle}>My Skills</h3>
-          {fetchSkills.data.map((skillset, index)=>{
+          {fetchSkillsData.map((skillset, index)=>{
             return <SkillsContainer skillsSet={skillset} key={index} />;
           })}
           

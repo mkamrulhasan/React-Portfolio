@@ -4,16 +4,16 @@ import Section from "../UI/Section";
 import Timeline from "../UI/Timeline/Timeline";
 
 const Experiences = () => {
-  const fetchExperiences = useHttp();
+  const { data, requestHttp: fetchHttpHandler } = useHttp();
   useEffect(() => {
-    fetchExperiences.requestHttp(
+    fetchHttpHandler(
       "https://mkhemel-portfolio-default-rtdb.asia-southeast1.firebasedatabase.app/experiences.json"
     );
-  }, [fetchExperiences]);
+  }, [fetchHttpHandler]);
 
   return (
     <Section secTitle="What I have." id="experiences">
-      <Timeline experiences={fetchExperiences.data} />
+      <Timeline experiences={data} />
     </Section>
   );
 };
